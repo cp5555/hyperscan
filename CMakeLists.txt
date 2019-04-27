@@ -152,6 +152,7 @@ if(MSVC OR MSVC_IDE)
             # todo: change these as required
             #set(ARCH_C_FLAGS "/arch:AVX2")
             #set(ARCH_CXX_FLAGS "/arch:AVX2")
+            set(MSVC_ARGS "/Zi /nologo /WX /MP /Ot /GL")
             set(MSVC_WARNS "/wd4101 /wd4146 /wd4172 /wd4200 /wd4244 /wd4267 /wd4307 /wd4334 /wd4805 /wd4996 -D_CRT_SECURE_NO_WARNINGS")
             set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  /O2 ${MSVC_WARNS}")
             set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /O2 ${MSVC_WARNS} /wd4800 -DBOOST_DETAIL_NO_CONTAINER_FWD")
